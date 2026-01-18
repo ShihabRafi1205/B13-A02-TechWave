@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my-font-family {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* My Common style */
+.bg-color-1 {
+    background-color: #1A0B2E;
+}
+
+.btn {
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 12px 13px 12px 16px;
+    border-radius: 10000px;
+    cursor: pointer;
+}
+
+/* header section */
+header {
+    max-width: 1600px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92px;
+}
+
+nav h3 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+nav h3 span {
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 4px 4px 0px #0000000e;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 500;
+    list-style: none;
+    color: white;
+}
+
+.bt-flex {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+@media screen and (max-width:576px) {
+    nav {
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    nav h3 {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        margin-right: 18px;
+    }
+
+}

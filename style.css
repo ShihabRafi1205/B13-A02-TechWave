@@ -238,10 +238,6 @@ header hr {
     color: #FFFFFF;
 }
 
-
-/* Banner Section */
-
-
 @media screen and (max-width:576px) {
     nav {
         height: 60px;
@@ -301,9 +297,11 @@ header hr {
         max-width: 1200px;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
         margin: 0 auto;
-        padding-left: 25px;
+        padding-left: 12px;
+        padding-right: 5px;
 
     }
 
@@ -314,12 +312,27 @@ header hr {
 
     .why-techweb .premium {
         grid-row: span 1;
-        height: 290px;
+        /* height: 290px; */
+        /* height: max-content; */
     }
+
+    .premium h5,
+    .premium p {
+        margin-bottom: 10px;
+    }
+
+    .premium h5 {
+        margin-top: 10px;
+    }
+    .why-techweb .box p {
+    line-height: 24px;
+}
 
     .why-techweb .mobile,
     .why-techweb .global,
-    .why-techweb .exclosive {
-        width: 400px;
+    .why-techweb .exclosive,
+    .why-techweb .premium {
+        width: 100%;
+        max-width: 375px;
     }
 }

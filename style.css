@@ -151,6 +151,7 @@ header hr {
     background-color: #230E3D;
     max-width: 1600px;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .why-techweb h2 {
@@ -238,6 +239,124 @@ header hr {
     color: #FFFFFF;
 }
 
+/* Featured */
+
+.featured {
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.featured h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-Container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 30px
+}
+
+.featured-Container .featured-box {
+    background-color: #250D44;
+    border-radius: 15px;
+}
+
+.featured-Container .youtube {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.featured-Container .featured-box h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 24px 24px 12px;
+}
+
+.featured-Container .featured-box p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: white;
+    margin: 0 24px 12px;
+}
+
+.featured-Container .featured-box .featured-time {
+    margin: 0 24px 24px;
+}
+
+.featured-time .time-color {
+    color: #00FF88;
+}
+
+/* Host section */
+.host {
+    max-width: 1600px;
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+}
+
+.host h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.host-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 40px 40px;
+    border-radius: 40px;
+    background-color: #230E3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.host-card .host-image {
+    width: 100%;
+}
+
+.host-card .host-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.host-card h3 {
+    font-size: 2rem;
+    color: white;
+
+}
+
+.host-card .host-content p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: white;
+
+}
+
+.host-card .host-icon {
+    display: flex;
+    gap: 8px;
+}
+
+.host-card .host-icon .icon {
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 14px 14px 12px;
+}
+
+
 @media screen and (max-width:576px) {
     nav {
         height: 60px;
@@ -286,6 +405,7 @@ header hr {
 
     .why-techweb {
         padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .why-techweb h2 {
@@ -323,9 +443,10 @@ header hr {
     .premium h5 {
         margin-top: 10px;
     }
+
     .why-techweb .box p {
-    line-height: 24px;
-}
+        line-height: 20px;
+    }
 
     .why-techweb .mobile,
     .why-techweb .global,
@@ -333,5 +454,38 @@ header hr {
     .why-techweb .premium {
         width: 100%;
         max-width: 375px;
+    }
+
+    .featured {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .featured h2 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .featured-Container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px
+    }
+
+    .host {
+        padding-top: 24px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .host h2 {
+        font-size: 2rem;
+    }
+
+    .host-card {
+        padding: 24px;
+        border-radius: 24px;
+        flex-direction: column;
+        gap: 24px;
     }
 }

@@ -298,10 +298,9 @@ header hr {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
         margin: 0 auto;
         padding-left: 12px;
-        padding-right: 5px;
+        /* padding-right: 5px; */
 
     }
 
@@ -312,8 +311,7 @@ header hr {
 
     .why-techweb .premium {
         grid-row: span 1;
-        /* height: 290px; */
-        /* height: max-content; */
+
     }
 
     .premium h5,

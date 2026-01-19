@@ -70,6 +70,78 @@ nav ul {
     align-items: center;
     gap: 2px;
 }
+header hr{
+    /* font-weight: 1;
+    opacity: 10%; */
+    width: 100%; 
+    border: none;
+    border-top: 1px solid gray;
+    opacity: 0.2;
+
+}
+
+.about {
+    max-width: 1600px;
+    background-color: #1A0B2E;
+    /* border: 2px solid green; */
+
+
+}
+
+.about-content {
+    max-width: 1200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 2px solid yellowgreen; */
+}
+
+.about h2,
+p {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.about hr {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid gray;
+    opacity: 0.2;
+}
+
+.about .about-num {
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.num-box h2{
+    color: #00FF88;
+}
+.num-box p{
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+
+/* Banner Section */
+
 
 @media screen and (max-width:576px) {
     nav {
@@ -92,7 +164,26 @@ nav ul {
 
     #hamburger-menu {
         display: block;
-        margin-right: 18px;
+        margin-right: 20px;
     }
+    .about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about .about-num {
+    margin: 40px auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-content {
+    max-width: 1200px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 2px solid yellowgreen; */
+}
+
 
 }

@@ -79,6 +79,87 @@ header hr {
 
 }
 
+/* Banner Section */
+.banner {
+    max-width: 1600px;
+    height: 100vh;
+    background-image: url("./assets/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 101px;
+
+}
+
+.banner-image {
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-image .batch {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #00FF88;
+    border-radius: 1000px;
+    position: absolute;
+    padding: 8px 16px;
+    left: 259px;
+    top: 30px;
+    z-index: 2;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image .microphone {
+    position: absolute;
+    bottom: 90px;
+    right: 110px;
+
+
+}
+
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3.75rem;
+    color: white;
+    margin-top: 40px;
+}
+
+.banner-content P {
+    font-size: 1rem;
+    color: white;
+    margin-top: 8px;
+}
+
+.btn-flex {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-flex .listen,
+.btn-flex .subscribe {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-flex .subscribe {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+
+}
+
 /* About-Section */
 
 .about {
@@ -317,11 +398,19 @@ header hr {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+    border: 3px solid gold;
+    transition: border-color 0.4s ease, transform 0.4s ease;
 
+}
+
+.host-card:hover {
+    border-color: rgb(255, 83, 20);
+    transform: scale(1.05);
 }
 
 .host-card .host-image {
     width: 100%;
+
 }
 
 .host-card .host-content {
@@ -425,6 +514,18 @@ footer h1 .linear {
         margin-right: 20px;
     }
 
+    .banner {
+        padding-top: 101px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+        margin-top: 24px;
+    }
+
     .about h2 {
         font-size: 2rem;
         font-weight: 700;
@@ -459,12 +560,9 @@ footer h1 .linear {
 
     .why-techweb .features {
         max-width: 1200px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0 auto;
-        padding-left: 12px;
-        padding-right: 5px;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
 
     }
 
@@ -495,9 +593,11 @@ footer h1 .linear {
     .why-techweb .mobile,
     .why-techweb .global,
     .why-techweb .exclosive,
-    .why-techweb .premium {
+    .why-techweb .premium,
+    .why-techweb .rich {
         width: 100%;
         max-width: 375px;
+        margin-bottom: 10px;
     }
 
     .featured {
